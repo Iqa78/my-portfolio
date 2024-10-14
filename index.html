@@ -1,13 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1>Welcome to My Portfolio</h1>
-  <p>This is a simple static website hosted on GitHub Pages.</p>
-</body>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f2f3fb" />
+    <title>My Prtfolio</title>
+    <meta
+      name="description"
+      content="A one-page personal about me website built using HTML, CSS, and JavaScript. It is a simple and clean design, with a focus on showcasing your existing social media following."
+    />
+    <meta
+      name="keywords"
+      content="Personal portfolio, Personal portfolio website, Personal portfolio using html, css, javascript, clean and simple personal portfolio"
+    />
+    <link rel="canonical" href="xyzuser.github.io/about-me/" />
+    <meta name="author" content="demouser" />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link href="assets/style/style.css" rel="stylesheet" />
+    <!-- Unpkg for card scroll reveal effect -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <!--On loading name effect-->
+        <div class="name" translate="no">
+         <span><span>Demo</span></span><span><span>esh</span></span> <span><span>User</span></span>
+        </div>
+
+        <!----Few personal detail---->
+        <!--more details button-->
+        <div class="info-box">
+          About me
+          <div class="toggle" onclick="vibrate()">
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <!--details-->
+          <div>
+            <br />
+            <div class="details">
+              <ul>
+                <li class="about">
+                  Hello, I’m Demo User. I am a web developer, multimedia editor, and meme star. 
+                  You will find me making hilarious memes, clicking amazing photos, playing mobile 
+                  games, drawing my imagination on paper and watching movies and series. Be it websites, 
+                  videos, memes or life, you can always look forward to a good day when you are with me.
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+        <!----All social media buttons---->
+        <div class="social-media">
+          <a href="mailto:demouser@gmail.com">
+            <div><i class="fa-solid fa-envelope"></i>Email</div>
+          </a>
+          <a href="https://www.facebook.com/demouser"
+            ><div><i class="fa-brands fa-facebook-f"></i>Facebook</div>
+          </a>
+          <a href="https://instagram.com/demouser"
+            ><div><i class="fa-brands fa-instagram"></i>Instagram</div>
+          </a>
+          <a href="https://twitter.com/demouser"
+            ><div><i class="fa-brands fa-x-twitter"></i>Twitter</div>
+          </a>
+          <a href="https://github.com/demouser">
+            <div><i class="fa-brands fa-github"></i>Github</div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <script src="javascript.js"></script>
+  </body>
 </html>
